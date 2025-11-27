@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>View Lost/Found Items</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <h1>All Items</h1>
+</header>
+
+<div class="filter-box">
+  <input type="text" id="searchInput" placeholder="Search by name">
+  <select id="categoryFilter">
+    <option value="">All Categories</option>
+    <option value="Electronics">Electronics</option>
+    <option value="Clothes">Clothes</option>
+    <option value="Books">Books</option>
+    <option value="Accessories">Accessories</option>
+    <option value="Other">Other</option>
+  </select>
+  <select id="typeFilter">
+    <option value="">Lost + Found</option>
+    <option value="Lost">Lost Only</option>
+    <option value="Found">Found Only</option>
+  </select>
+</div>
+
+<div id="itemsContainer" class="items-container"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
