@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Edit Lost/Found Item</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <h1>Edit Lost / Found Item</h1>
+</header>
+
+<div class="form-box">
+  <label>Item Name</label>
+  <input type="text" id="itemName">
+
+  <label>Description</label>
+  <textarea id="itemDescription"></textarea>
+
+  <label>Your Contact</label>
+  <input type="text" id="contact">
+
+  <label>Category</label>
+  <select id="category">
+    <option value="Electronics">Electronics</option>
+    <option value="Clothes">Clothes</option>
+    <option value="Books">Books</option>
+    <option value="Accessories">Accessories</option>
+    <option value="Other">Other</option>
+  </select>
+
+  <label>Type</label>
+  <select id="type">
+    <option value="Lost">Lost</option>
+    <option value="Found">Found</option>
+  </select>
+
+  <button onclick="updateItem()">Save Changes</button>
+  <button class="back-btn" onclick="window.location.href='view.html'">Back</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
