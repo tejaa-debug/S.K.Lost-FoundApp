@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Add Lost/Found Item</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <h1>Add Lost / Found Item</h1>
+</header>
+
+<div class="form-box">
+  <label>Upload Image</label>
+  <input type="file" id="itemImage">
+
+  <label>Item Name</label>
+  <input type="text" id="itemName" placeholder="Enter item name">
+
+  <label>Description</label>
+  <textarea id="itemDescription" placeholder="Enter details"></textarea>
+
+  <label>Your Contact</label>
+  <input type="text" id="contact" placeholder="Phone or Email">
+
+  <label>Category</label>
+  <select id="category">
+    <option value="Electronics">Electronics</option>
+    <option value="Clothes">Clothes</option>
+    <option value="Books">Books</option>
+    <option value="Accessories">Accessories</option>
+    <option value="Other">Other</option>
+  </select>
+
+  <label>Type</label>
+  <select id="type">
+    <option value="Lost">Lost</option>
+    <option value="Found">Found</option>
+  </select>
+
+  <button onclick="saveItem()">Submit</button>
+  <button class="back-btn" onclick="window.location.href='index.html'">Back</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
